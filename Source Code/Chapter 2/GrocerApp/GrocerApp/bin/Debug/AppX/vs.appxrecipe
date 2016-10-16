@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TINY</Machine>
+    <WindowsUser>adam</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>54C69677BE5E223FF97137A042AC6839BFACD8A3E23204BDE309CE1FA84DDC06</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a0873d78-0e13-4e25-93fa-58269cbe4e7f_1.0.0.0_neutral__6fxp0bkxjs8ye</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a0873d78-0e13-4e25-93fa-58269cbe4e7f_6fxp0bkxjs8ye!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a0873d78-0e13-4e25-93fa-58269cbe4e7f</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=adam</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-25T08:26:40.210</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\GrocerApp.exe">
+      <PackagePath>GrocerApp.exe</PackagePath>
+      <Modified>2012-09-25T08:26:40.127</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\GrocerApp.pdb">
+      <PackagePath>GrocerApp.pdb</PackagePath>
+      <Modified>2012-09-25T08:26:40.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T19:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-09-25T08:01:52.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\Pages\ItemDetail.xaml">
+      <PackagePath>Pages\ItemDetail.xaml</PackagePath>
+      <Modified>2012-09-25T08:22:30.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\Pages\NoItemSelected.xaml">
+      <PackagePath>Pages\NoItemSelected.xaml</PackagePath>
+      <Modified>2012-09-25T08:14:13.969</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\Resources\GrocerResourceDictionary.xaml">
+      <PackagePath>Resources\GrocerResourceDictionary.xaml</PackagePath>
+      <Modified>2012-09-25T08:21:37.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\Pages\ListPage.xaml">
+      <PackagePath>Pages\ListPage.xaml</PackagePath>
+      <Modified>2012-09-25T08:12:34.103</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T15:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adam\Documents\Books\Metro Revealed 2 - XAML\Source Code\Chapter 2\GrocerApp\GrocerApp\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-09-25T08:26:40.169</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

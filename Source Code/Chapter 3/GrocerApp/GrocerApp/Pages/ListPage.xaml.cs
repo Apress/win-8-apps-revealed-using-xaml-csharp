@@ -1,0 +1,80 @@
+﻿using GrocerApp.Data;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
+
+namespace GrocerApp.Pages {
+
+    public sealed partial class ListPage : Page {
+        ViewModel viewModel;
+
+
+        public ListPage() {
+
+            viewModel = new ViewModel();
+
+            viewModel.StoreList.Add("Whole Foods");
+            viewModel.StoreList.Add("Kroger");
+            viewModel.StoreList.Add("Costco");
+            viewModel.StoreList.Add("Walmart");
+
+            viewModel.GroceryList.Add(new GroceryItem {
+                Name = "Apples",
+                Quantity = 4, Store = "Whole Foods"
+            });
+            viewModel.GroceryList.Add(new GroceryItem {
+                Name = "Hotdogs",
+                Quantity = 12, Store = "Costco"
+            });
+            viewModel.GroceryList.Add(new GroceryItem {
+                Name = "Soda",
+                Quantity = 2, Store = "Costco"
+            });
+            viewModel.GroceryList.Add(new GroceryItem {
+                Name = "Eggs",
+                Quantity = 12, Store = "Kroger"
+            });
+
+
+            this.InitializeComponent();
+
+            this.DataContext = viewModel;
+
+            ItemDetailFrame.Navigate(typeof(NoItemSelected));
+
+            viewModel.PropertyChanged += (sender, args) => {
+                if (args.PropertyName == "SelectedItemIndex") {
+                    if (viewModel.SelectedItemIndex == -1) {
+                        ItemDetailFrame.Navigate(typeof(NoItemSelected));
+                        AppBarDoneButton.IsEnabled = false;
+                    } else {
+                        ItemDetailFrame.Navigate(typeof(ItemDetail), viewModel);
+                        AppBarDoneButton.IsEnabled = true;
+                    }
+                }
+            };
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e) {
+        }
+
+        private void ListSelectionChanged(object sender, SelectionChangedEventArgs e) {
+            viewModel.SelectedItemIndex = groceryList.SelectedIndex;
+        }
+
+        private void AppBarButtonClick(object sender, RoutedEventArgs e) {
+            if (e.OriginalSource == AppBarDoneButton
+                    && viewModel.SelectedItemIndex > -1) {
+
+                viewModel.GroceryList.RemoveAt(viewModel.SelectedItemIndex);
+                viewModel.SelectedItemIndex = -1;
+
+            } else if (e.OriginalSource == AppBarZipButton) {
+                HomeZipFlyout.Show(this, this.BottomAppBar, (Button)e.OriginalSource);
+            } else if (e.OriginalSource == AppBarAddButton) {
+                AddItemFlyout.Show(this, this.BottomAppBar, (Button)e.OriginalSource);
+            }
+
+        }
+    }
+}

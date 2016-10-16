@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="a0873d78-0e13-4e25-93fa-58269cbe4e7f" Publisher="CN=adam" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>GrocerApp</DisplayName>
+    <PublisherDisplayName>adam</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GrocerApp.App">
+      <VisualElements DisplayName="GrocerApp" Logo="Assets\tile150.png" SmallLogo="Assets\tile30.png" Description="GrocerApp" ForegroundText="light" BackgroundColor="#3E790A">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\tile310.png" />
+        <SplashScreen Image="Assets\tile620.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

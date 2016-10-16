@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="GrocerApp.Pages.ItemDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GrocerApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource AppBackgroundColor}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Name:" Style="{StaticResource ItemDetailText}" />
+        <TextBlock Text="Quantity:" Style="{StaticResource ItemDetailText}" 
+                   Grid.Row="1"/>
+        <TextBlock Text="Store:" Style="{StaticResource ItemDetailText}" 
+                   Grid.Row="2"/>
+
+        <TextBox x:ConnectionId='1' x:Name="ItemDetailName" 
+                 Style="{StaticResource ItemDetailTextBox}" 
+                                               
+                 Grid.Column="1"/>
+
+        <TextBox x:ConnectionId='2' x:Name="ItemDetailQuantity" 
+                 Style="{StaticResource ItemDetailTextBox}" 
+                                               
+                 Grid.Row="1" Grid.Column="1"/>
+
+        <ComboBox x:ConnectionId='3' x:Name="ItemDetailStore"
+                  Style="{StaticResource ItemDetailStore}"
+                  Grid.Column="1" Grid.Row="2"
+                  ItemsSource="{Binding StoreList}"
+                                                     
+                  DisplayMemberPath="" />
+    </Grid>
+</Page>
+
